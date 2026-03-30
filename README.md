@@ -53,7 +53,7 @@ Il met en avant un article de la collection *granny* avec une interface élégan
 
 ```
 /projet
-│── index.html
+│── page produit e-commerce.html
 │── styleproduit.css
 │── logo.png
 │── pull marron.jpg
