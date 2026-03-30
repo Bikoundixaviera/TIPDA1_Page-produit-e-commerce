@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Page produit e-commerce </title>
+        <link rel="stylsheet" href="styleproduit.css">
+    </head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Bell MT','Bodoni MT', sans-serif;
+            background: linear-gradient( #fff3b9,#ffd506);
+        }
+
+        /* En-tête */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background: #f4eecf;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+       
+
+        header input {
+            width: 300px;
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        header input:hover {
+            color: #ffffffec;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        nav a:hover{
+            color: rgb(0, 123, 255);
+        }
+
+        /* CONTAINER */
+        .container {
+            display: flex;
+            padding: 30px;
+            margin: 30px auto;
+            gap: 20px;
+            width: 1200px;
+            height: 500px;
+            background:  #ffee97;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            font-family: 'Bell MT','Bodoni MT', sans-serif;
+            
+        }
+
+        /* IMAGE PRINCIPALE */
+        .left {
+            width: 40%;
+            padding: 5px;
+        }
+
+        .left img {
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 83%;
+            border: 3px solid black;
+        }
+
+        /* MINIATURES */
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .thumbnails img {
+            width: 120px;
+            border: 3px solid black;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* DROITE */
+        .right {
+            /*flex: 2;*/
+            width: 50%;
+            padding-left: 20px;
+            color:  rgb(0, 0, 0);
+            background-color: white;
+        }
+
+        .right h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .right h3 {
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .price {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .desc {
+            font-size: 14px;
+            line-height: 1.0;
+        }
+
+        .reviews {
+            margin: 10px 0;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 22px;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #555;
+        }
+
+        /* QUANTITÉ */
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .quantity button {
+            padding: 5px 10px;
+            font-size: 18px;
+        }
+
+        .quantity input {
+            width: 40px;
+            text-align: center;
+        }
+
+        /* BOUTON */
+        .panier {
+            background: black;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 2%;
+        }
+
+        /* BARRE INFOS */
+        .info-bar {
+            margin-top: 20px;
+            background: #111;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            width: 100%; 
+            margin-left: -20px;
+            margin-right: -20px;
+            padding: 10px;
+            height: 50px;
+        }
+    
+        .info-bar table {
+            margin-top: -20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .info-bar table span {
+            font-size: 22px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: white;
+            color: black;
+        }
+
+        footer span{
+            font-family: "Elephant", serif;
+        }
+    </style>
+<body>
+   
+<header>
+    <div class="logo">
+        <img src="logo Xaviera.png" alt="Logo">
+    </div>
+
+    <input type="text" placeholder="Rechercher">
+
+
+
+    <nav>
+        <a href="www.Google.com">Accueil</a>
+        <a href="www.Google.com">À propos</a>
+        <a href="www.Google.com">Contact</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <!-- IMAGE PRINCIPALE -->
+    <div class="left">
+        <img src="pull marron.jpg" alt="pull marron">
+    </div>
+
+    <!-- MINIATURES -->
+    <div class="thumbnails">
+        <br>
+        <br>
+        <br>
+        <img src="pull bleu.jpg">
+        <img src="pull noir.jpg">
+        <img src="pull turquois.jpg">
+    </div>
+
+    <!-- INFOS PRODUIT -->
+    <div class="right">
+        <h1>PULL TRICOTE EN CARRÉ GRANNY</h1>
+
+        <h3>Collection granny</h3>
+
+        <p class="price">
+            <strong>15 000 F CFA</strong> l’unité <br>
+            <strong>13 500 F CFA</strong> à partir de 2 pièces
+        </p>
+
+        <hr color="black">
+
+        <p class="desc">
+            La collection granny vous réserve des pièces originales
+            comme ce pull parfait en saison de pluies, fait main avec
+            une laine de qualité vous procurant une douce chaleur tout
+            en étant unique dans votre style.
+        </p>
+
+        <hr color="black">
+
+        <div class="reviews">
+            Découvrez ce qu’ils en ont pensé :
+            <span class="stars">★★★★★</span>
+            (35 avis)
+        </div>
+
+        <p class="note">
+            * Article en pièce unique sans choix de couleur
+        </p>
+
+        <!-- QUANTITÉ -->
+        <div class="quantity">
+            <button><strong>-</strong></button>
+            <input type="text" value="1">
+            <button><strong>+</strong></button>
+        </div>
+        
+
+        <button class="panier">Ajouter au panier</button>
+
+        <!-- INFOS BAS -->
+        <div class="info-bar">
+            <table border="0">
+                <tr>
+                    <td><span>🚚</span></td>
+                    <td><span>💳</span></td>
+                    <td><span>📍</span></td>
+                </tr>
+                <tr>
+                    <td>Livraison dans tout le Cameroun avec frais</td>
+                    <td>Paiement de 50% avant la livraison</td>
+                    <td>Produit Made In Cameroon</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    ©2025 <span>CHEZ XAVIERA</span>, Laissez parler votre créativité
+</footer>
+
+
+<script>
+    // Bouton d'ajout de la quantité
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const qty = document.getElementById("qty");
+
+plus.addEventListener("click", () => {
+    qty.value = parseInt(qty.value) + 1;
+});
+
+minus.addEventListener("click", () => {
+    if (qty.value > 1) {
+        qty.value = parseInt(qty.value) - 1;
+    }
+});
+
+
+//  Bouton d'ajout au panier
+const btn = document.getElementById("addToCart");
+const message = document.getElementById("message");
+
+btn.addEventListener("click", () => {
+    const quantity = qty.value;
+
+    message.textContent = "✔ Produit ajouté (" + quantity + ")";
+    message.style.color = "green";
+
+    // petite animation
+    btn.style.transform = "scale(0.95)";
+    setTimeout(() => {
+        btn.style.transform = "scale(1)";
+    }, 150);
+});
+</script>
+
+</body>
+</html>
