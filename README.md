@@ -101,3 +101,4 @@ Dans le cadre d’un apprentissage en développement web.
 ##  Licence
 
 Ce projet est libre d’utilisation à des fins éducatives.
+https://github.com/Bikoundixaviera/TIPDA1_Page-produit-e-commerce
